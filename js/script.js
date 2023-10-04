@@ -5,8 +5,8 @@ console.log(età)
 // - chiedere al passeggero quanti km vuole percorrere
 let kmTotali = prompt('quanti km vuoi percorrere?')
 // - definire il prezzo al km base di (0.21$ al km)
-let km = '0.21' 
-km = ( Math.round(km * 10) / 10 );
+let km = '0.21';
+
 
 // - va applicato uno sconto del 20% per i minorenni
 // - va applicato uno sconto del 40% per gli over 65
@@ -23,6 +23,8 @@ if (età < 18) {
 }
 let prezzoTotale = (km * kmTotali)
 console.log(prezzoTotale)
+
+let prezzoFix = (Math.round (prezzoTotale * 100) / 100)
 
 // - far comparire il prezzo finale con lo sconto aplicato
 
@@ -41,7 +43,7 @@ if (età < 18) {
     firstPartMessage = ('questo è il prezzo del tuo biglietto')
 }
 
-Math.round
+
 
 const messageDomElement = document.getElementById('prezzo');
-messageDomElement.innerHTML = firstPartMessage + (': ') + prezzoTotale + ('$')  ;
+messageDomElement.innerHTML = firstPartMessage + (': ') + prezzoFix + ('$')  ;
