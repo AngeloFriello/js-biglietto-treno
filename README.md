@@ -1,4 +1,5 @@
 # calcolare il prezzo del biglietto del treno
+- chiedere al passeggero quanti anni ha
 - chiedere al passeggero quanti km vuole percorrere
 - definire il prezzo al km base di (0.21$ al km)
 - va applicato uno sconto del 20% per i minorenni
